@@ -1,0 +1,218 @@
+.auth-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 50% 20%, #173149 0%, transparent 48%),
+    #0e141b;
+  display: flex;
+  flex-direction: column;
+}
+.auth-header {
+  height: 78px;
+  background: #090f16e8;
+  border-bottom: 1px solid #263442;
+}
+.auth-header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.auth-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #a0aab4;
+  font-size: 13px;
+}
+.auth-back:hover,
+.auth-switch button:hover {
+  color: var(--cyan);
+}
+.auth-main {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 48px 16px;
+}
+.auth-card {
+  width: min(100%, 440px);
+  padding: 36px;
+  background: linear-gradient(155deg, #1b2838, #151c25 72%);
+  border: 1px solid #314159;
+  border-radius: 8px;
+  box-shadow: 0 24px 70px #0006;
+}
+.auth-mark {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 22px;
+  padding: 5px;
+  border-radius: 12px;
+  background: #0e141b;
+  border: 1px solid #66c0f465;
+}
+.auth-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.auth-card > .eyebrow {
+  color: var(--cyan);
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.auth-card h1 {
+  margin-top: 8px;
+  font-size: 29px;
+  letter-spacing: -0.7px;
+}
+.auth-intro {
+  margin-top: 8px;
+  color: #a0aab4;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.auth-card form {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+}
+.auth-field {
+  display: grid;
+  gap: 7px;
+  color: #c7d0d9;
+  font-size: 12px;
+  font-weight: 600;
+}
+.auth-field input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid #343f4d;
+  border-radius: 4px;
+  background: #0e141b;
+  color: #dde3ed;
+  font-size: 13px;
+}
+.auth-password-control {
+  position: relative;
+}
+.auth-password-control input {
+  padding-right: 44px;
+}
+.auth-password-control:focus-within input {
+  border-color: var(--blue);
+  outline: 2px solid #66c0f430;
+}
+.auth-password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  color: #8997a5;
+  transform: translateY(-50%);
+}
+.auth-password-toggle:hover,
+.auth-password-toggle:focus-visible {
+  color: #dce8f3;
+}
+.auth-field input::placeholder {
+  color: #697582;
+}
+.auth-field input:focus {
+  border-color: var(--blue);
+  outline: 2px solid #66c0f430;
+}
+.auth-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #a0aab4;
+  font-size: 11px;
+}
+.auth-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.auth-options input {
+  accent-color: var(--blue);
+}
+.auth-hint {
+  margin-top: -8px;
+  color: #a0aab4;
+  font-size: 11px;
+}
+.auth-error {
+  color: #ff9b91;
+  font-size: 12px;
+}
+.auth-success {
+  color: #8bdc9a;
+  font-size: 12px;
+}
+.auth-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  margin-top: 2px;
+  border-radius: 4px;
+  background: linear-gradient(100deg, #66c0f4, #a1d9ff);
+  color: #0c2230;
+  font-size: 13px;
+  font-weight: 700;
+}
+.auth-submit:hover {
+  filter: brightness(1.08);
+}
+.auth-submit:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+.auth-switch {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #ffffff14;
+  color: #a0aab4;
+  font-size: 12px;
+  text-align: center;
+}
+.auth-switch button {
+  color: var(--cyan);
+  font-weight: 600;
+}
+.auth-demo-note {
+  margin-top: 18px;
+  color: #77838e;
+  font-size: 10px;
+  line-height: 1.5;
+  text-align: center;
+}
+.auth-footer {
+  padding: 20px 16px;
+  color: #77838e;
+  font-size: 10px;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .auth-header {
+    height: 66px;
+  }
+  .auth-card {
+    padding: 28px 22px;
+  }
+  .auth-card h1 {
+    font-size: 25px;
+  }
+  .auth-main {
+    padding: 28px 16px;
+  }
+}
